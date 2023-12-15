@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Throw dice</title>
+  <link href='/style.css' rel='stylesheet'>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+  <h1 id="page_title">Throw dice</h1>
+  <h1 id="value_text">--</h1>
+
+  <div id="jednoduche_hazeni_buttons"></div>
+    <button id="1die" onclick="hodKostkou()">1 die</button>
+    <button id="2die" onclick="hodDvemaKostkami()">2 dice</button>
+    <button id="3die" onclick="hodTremiKostkami()">3 dice</button>
+  </div>
+  
+  <div id="nekonecne_hazeni_buttons">
+    <button id="infinite1" onclick="nekonecne_hazeni()">Infinitely throw 1</button>
+    <button id="infinite2" onclick="nekonecne_hazeni2()">Infinitely throw 2</button>
+    <button id="infinite3" onclick="nekonecne_hazeni3()">Infinitely throw 3</button>
+  </div>
+
+  <button id="language_button" onclick="toggleCzech()">Czech Mode</button>
+</body>
+</html>
