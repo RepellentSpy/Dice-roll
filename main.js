@@ -1,12 +1,18 @@
 function hodKostkou() {
     let kostkaValue = Math.floor(Math.random() * 6) + 1;
     document.getElementById("value_text").innerHTML = kostkaValue;
+    let sum = kostkaValue;
+    console.log("Sum:", sum);
+    document.getElementById("sum_number").innerHTML = sum;
 }
 
 function hodDvemaKostkami() {
     let kostkaValue = Math.floor(Math.random() * 6) + 1;
     let kostka2Value = Math.floor(Math.random() * 6) + 1;
     document.getElementById("value_text").innerHTML = (kostkaValue + " " + kostka2Value)
+    let sum = kostkaValue + kostka2Value;
+    console.log("Sum:", sum);
+    document.getElementById("sum_number").innerHTML = sum;
 }
 
 function hodTremiKostkami() {
@@ -14,6 +20,9 @@ function hodTremiKostkami() {
     let kostka2Value = Math.floor(Math.random() * 6) + 1;
     let kostka3Value = Math.floor(Math.random() * 6) + 1;
     document.getElementById("value_text").innerHTML = (kostkaValue + " " + kostka2Value + " " + kostka3Value)
+    let sum = kostkaValue + kostka2Value + kostka3Value;
+    console.log("Sum:", sum);
+    document.getElementById("sum_number").innerHTML = sum;
 }
 
 function nekonecne_hazeni() {
@@ -39,4 +48,5 @@ function toggleCzech() { // Aktuálně rozpracováno a nevyužito
     document.getElementById("infinite1").innerHTML = "Nekonecné házení 1 kostky";
     document.getElementById("infinite2").innerHTML = "Nekonecné házení 2 kostek";
     document.getElementById("infinite3").innerHTML = "Nekonecné házení 3 kostek";
+    document.getElementById("sum_text").innerHTML = "Součet: ";
 }
