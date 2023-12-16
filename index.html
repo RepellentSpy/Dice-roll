@@ -6,27 +6,32 @@
   <title>Throw dice</title>
   <link href='/style.css' rel='stylesheet'>
   <script type="text/javascript" src="main.js"></script>
+  <!-- js-cookie -->
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
 </head>
 <body style="background-image: url(images/Blueprint_white.svg)">
   <h1 id="page_title">Throw dice</h1>
   <div id="value_box">
     <h1 id="value_text">----</h1>
   </div>
+
+  <div id="stop_button" onclick="stopThrowing()"></div>
+
   <h2 id="sum_text">Summary: </h2>
   <p id="sum_number">----</p>
 
-  <div id="jednoduche_hazeni_buttons"></div>
+  <section id="jednoduche_hazeni_buttons">
     <button id="1die" onclick="hodKostkou()">1 die</button>
     <button id="2die" onclick="hodDvemaKostkami()">2 dice</button>
     <button id="3die" onclick="hodTremiKostkami()">3 dice</button>
-  </div>
+  </section>
   
-  <div id="nekonecne_hazeni_buttons">
-    <button id="infinite1" onclick="nekonecne_hazeni()">Infinitely throw 1</button>
-    <button id="infinite2" onclick="nekonecne_hazeni2()">Infinitely throw 2</button>
-    <button id="infinite3" onclick="nekonecne_hazeni3()">Infinitely throw 3</button>
-  </div>
-
+  <section id="nekonecne_hazeni_buttons">
+    <button id="infinite1" onclick="nekonecne_hazeni(); showStopButton();">Infinitely throw 1</button>
+    <button id="infinite2" onclick="nekonecne_hazeni2(); showStopButton();">Infinitely throw 2</button>
+    <button id="infinite3" onclick="nekonecne_hazeni3(); showStopButton();">Infinitely throw 3</button>
+  </section>
+  
   <button id="language_button" onclick="toggleCzech()">Czech Mode</button>
 </body>
 </html>

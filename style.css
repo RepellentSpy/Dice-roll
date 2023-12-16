@@ -17,6 +17,35 @@ button {
     background-color: white;
 }
 
+button:active {
+    animation: 0.2s button_click forwards;
+}
+
+@keyframes button_click {
+    from {
+        scale: 1;
+        background-color: white;
+        color: white;
+    }
+
+    to {
+        scale: 0.8;
+        background-color: black;
+        color: white;
+    }
+}
+
+@keyframes number_change {
+    from {
+        opacity: 0;
+        margin-top: -0.2rem;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 h1 {
     font-family: "Roboto Mono", Sans-serif;
 }
@@ -33,12 +62,15 @@ h1 {
     padding: 0.2rem;
     width: 6.3rem;
     height: 4rem;
+    z-index: 2;
+    position: relative;
 }
 
 #value_text {
     text-align: center;
     margin-top: 0.8rem;
     font-family: "Rethink Sans";
+    z-index: 3;
 }
 
 #sum_text {
@@ -53,8 +85,31 @@ h1 {
     font-family: "Roboto Mono";
 }
 
-#blueprint_blue {
-    position: absolute;
-    width: 100vw;
-    height: 10vh;
+@keyframes sum_number_change {
+    from {
+        opacity: 0;
+        margin-left: 7.8rem;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#stop_button {
+    background: repeating-linear-gradient(-55deg, #f21d1f, #f21d1f 8px, #ffffff 8px, #ffffff 13px);
+    color: white;
+    padding: 0.2rem;
+    width: 2.3rem;
+    height: 4rem;
+    margin-left: 7rem;
+    margin-top: -4.4rem;
+    cursor: pointer;
+    z-index: 1;
+    visibility: hidden;
+}
+
+@keyframes stop_appear {
+    from {opacity: 0; margin-left: 2rem;}
+    to {}
 }
