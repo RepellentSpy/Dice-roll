@@ -52,21 +52,25 @@ function hodTremiKostkami() {
 function nekonecne_hazeni() {
     hodKostkou();
     setInterval(hodKostkou, 800);
+    disableButtons();
 }
 
 function nekonecne_hazeni2() {
     hodDvemaKostkami();
     setInterval(hodDvemaKostkami, 800);
+    disableButtons();
 }
 
 function nekonecne_hazeni3() {
     hodTremiKostkami();
     setInterval(hodTremiKostkami, 800);
+    disableButtons();
 }
 
 function stopThrowing() {
     Cookies.set("manually_stopped", true);
     window.location.reload();
+    disableButtons();
 }
 
 function showStopButton() {
@@ -98,4 +102,13 @@ function animateNumberChange() {
     setTimeout(() => {
         document.getElementById("sum_number").style.animation = "";
     }, 520);
+}
+
+function disableButtons() {
+    document.getElementById("1die").disabled = true;
+    document.getElementById("2die").disabled = true;
+    document.getElementById("3die").disabled = true;
+    document.getElementById("infinite1").disabled = true;
+    document.getElementById("infinite2").disabled = true;
+    document.getElementById("infinite3").disabled = true;
 }
