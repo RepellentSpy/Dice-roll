@@ -8,3 +8,4 @@
     <li> Automatic sum of rolled dice
     <li> Infinitely rolling 1, 2 or 3 dice at once (with live sums)
     <li> Friendly UX and stylish UI design
+    <li> Saving and recalling rolled numbers via cookies
