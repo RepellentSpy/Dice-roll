@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dice roll</title>
+  <title>Dice-Roll</title>
   <link href='style.css' rel='stylesheet'>
   <script type="text/javascript" src="main.js"></script>
   <!-- js-cookie -->
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
 </head>
 <body style="background-image: url(images/Blueprint_white.svg)">
-  <h1 id="page_title">Dice roll</h1>
+  <h1 id="page_title">Dice-Roll</h1>
   <div id="value_box">
     <h1 id="value_text">----</h1>
   </div>
 
   <div id="stop_button" onclick="stopThrowing()"></div>
 
-  <h2 id="sum_text">Summary: </h2>
+  <h2 id="sum_text">Sum: </h2>
   <p id="sum_number">----</p>
 
   <section id="jednoduche_hazeni_buttons">
@@ -33,5 +33,6 @@
   </section>
   
   <button id="language_button" onclick="toggleCzech()">Czech Mode</button>
+  <button id="dark_mode_button" onclick="darkMode()">Dark Mode</button>
 </body>
 </html>

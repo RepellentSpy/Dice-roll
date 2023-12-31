@@ -112,3 +112,9 @@ function disableButtons() {
     document.getElementById("infinite2").disabled = true;
     document.getElementById("infinite3").disabled = true;
 }
+
+function darkMode() {
+    document.body.style.animation = "1.2s dark_mode_change forwards";
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+}
