@@ -130,7 +130,7 @@ function darkMode() {
 
 function changeToCzech() {
     document.getElementById("selected_language_button").style.animation = "0.3s language_indicator_change_toCzech forwards";
-    document.getElementById("page_title").innerHTML = "Házení kostek";
+    document.getElementById("page_title").innerHTML = "Házení-Kostek";
     document.getElementById("1die").innerHTML = "1 kostka";
     document.getElementById("2die").innerHTML = "2 kostky";
     document.getElementById("3die").innerHTML = "3 kostky";

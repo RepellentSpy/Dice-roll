@@ -15,6 +15,7 @@ button {
     border-color: transparent;
     border-width: 0;
     background-color: white;
+    box-shadow: 0 0 1rem #00000007;
 }
 
 button:active {
@@ -121,6 +122,7 @@ h1 {
     height: 2.5rem;
     width: 6rem;
     padding: 0.2rem;
+    box-shadow: 0 0 1rem #00000007;
 }
 
 #selected_language_button {
