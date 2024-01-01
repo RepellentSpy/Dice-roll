@@ -69,14 +69,14 @@ h1 {
 }
 
 #sum_number {
-    margin-left: 8rem;
+    margin-left: 4.2rem;
     font-size: 1.5rem;
     margin-top: -3.2rem;
     font-family: "Roboto Mono";
 }
 
 @keyframes sum_number_change {
-    from {opacity: 0; margin-left: 7.8rem;}
+    from {opacity: 0; margin-left: 4.8rem;}
     to {opacity: 1;}
 }
 

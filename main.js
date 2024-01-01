@@ -90,6 +90,7 @@ function toggleCzech() { // Aktuálně rozpracováno
     document.getElementById("infinite2").innerHTML = "Nekonecné házení 2 kostek";
     document.getElementById("infinite3").innerHTML = "Nekonecné házení 3 kostek";
     document.getElementById("sum_text").innerHTML = "Součet: ";
+    document.getElementById("sum_number").style.marginLeft = "7rem";
 }
 
 function animateNumberChange() {
@@ -117,4 +118,13 @@ function darkMode() {
     document.body.style.animation = "1.2s dark_mode_change forwards";
     document.body.style.backgroundColor = "black";
     document.body.style.color = "white";
+
+    document.getElementById("value_box").style.backgroundColor = "white";
+    document.getElementById("value_text").style.color = "black";
+
+    const elements = document.querySelectorAll(".ui-button");
+    for (const element of elements) {
+        element.style.backgroundColor = "#141414";
+        element.style.color = "white";
+    }
 }
