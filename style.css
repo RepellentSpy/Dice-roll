@@ -149,6 +149,24 @@ h1 {
     cursor: pointer;
 }
 
+#dark_mode_button {
+    float: right;
+    background-color: #dbdbdb;
+    height: 3rem;
+    padding: 0.2rem;
+    width: 3rem;
+    margin-top: -36vh;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+#dark_mode_icon {
+    height: 2.5rem;
+    width: 2.2rem;
+    margin: auto;
+    cursor: pointer;
+}
+
 @keyframes dark_mode_languagebutton_change {
     from {}
     to {background-color: #141414}
@@ -167,4 +185,16 @@ h1 {
 @keyframes language_indicator_change_toEnglish {
     0% {margin-left: 3rem;}
     100% {margin-left: 0rem;}
+}
+
+#back_button {
+    position: absolute;
+    font-family: "Roboto Mono", sans-serif;
+    bottom: 0;
+}
+
+#labs_icon {
+    width: 1.2rem;
+    margin-bottom: -0.2rem;
+    margin-right: 0.5rem;
 }

@@ -101,6 +101,9 @@ function disableButtons() {
 }
 
 function darkMode() {
+    dark_mode_button = document.getElementById("dark_mode_button");
+    dark_mode_button.remove();
+    
     document.body.style.animation = "1.2s dark_mode_change forwards";
     document.body.style.backgroundColor = "black";
     document.body.style.color = "white";
@@ -110,6 +113,9 @@ function darkMode() {
     document.getElementById("stop_button").style.background = "repeating-linear-gradient(-55deg, #f21d1f, #f21d1f 7px, #1c0000 7px, #1c0000 13px)";
     document.getElementById("revamped_language_button").style.animation = "1.2s dark_mode_languagebutton_change forwards";
     document.getElementById("selected_language_button").style.animation = "1.2s dark_mode_selectedlanguagebutton_change forwards";
+
+    document.getElementById("labs_icon").src = "images/experiment_tube_white.svg";
+    document.getElementById("back_text").style.color = "#8d8df1";
 
     
     setTimeout(() => {
