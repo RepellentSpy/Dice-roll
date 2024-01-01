@@ -117,12 +117,14 @@ h1 {
 }
 
 #revamped_language_button {
-    margin-top: 1rem;
+    float: right;
     background-color: #dbdbdb;
     height: 2.5rem;
-    width: 6rem;
     padding: 0.2rem;
+    width: 6rem;
     box-shadow: 0 0 1rem #00000007;
+    margin-top: -43vh;
+    margin-right: 1vw;
 }
 
 #selected_language_button {
