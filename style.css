@@ -114,3 +114,53 @@ h1 {
     from {opacity: 0; margin-left: 2rem;}
     to {}
 }
+
+#revamped_language_button {
+    margin-top: 1rem;
+    background-color: #dbdbdb;
+    height: 2.5rem;
+    width: 6rem;
+    padding: 0.2rem;
+}
+
+#selected_language_button {
+    background-color: white;
+    height: 2.5rem;
+    width: 3rem;
+    margin-top: -2.5rem;
+}
+
+#gb_flag {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.25rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+#cz_flag {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.85rem;
+    cursor: pointer;
+}
+
+@keyframes dark_mode_languagebutton_change {
+    from {}
+    to {background-color: #141414}
+}
+
+@keyframes dark_mode_selectedlanguagebutton_change {
+    from {}
+    to {background-color: #2e2e2e}
+}
+
+@keyframes language_indicator_change_toCzech {
+    0% {}
+    100% {margin-left: 3rem;}
+}
+
+@keyframes language_indicator_change_toEnglish {
+    0% {margin-left: 3rem;}
+    100% {margin-left: 0rem;}
+}

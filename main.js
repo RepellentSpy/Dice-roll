@@ -83,18 +83,6 @@ function showStopButton() {
     }, 720);
 }
 
-function toggleCzech() { // Aktuálně rozpracováno
-    document.getElementById("page_title").innerHTML = "Házení kostek";
-    document.getElementById("1die").innerHTML = "1 kostka";
-    document.getElementById("2die").innerHTML = "2 kostky";
-    document.getElementById("3die").innerHTML = "3 kostky";
-    document.getElementById("infinite1").innerHTML = "Nekonecné házení 1 kostky";
-    document.getElementById("infinite2").innerHTML = "Nekonecné házení 2 kostek";
-    document.getElementById("infinite3").innerHTML = "Nekonecné házení 3 kostek";
-    document.getElementById("sum_text").innerHTML = "Součet: ";
-    document.getElementById("sum_number").style.marginLeft = "7rem";
-}
-
 function animateNumberChange() {
     document.getElementById("value_text").style.animation = "0.5s number_change forwards";
 
@@ -120,6 +108,9 @@ function darkMode() {
     document.getElementById("value_box").style.animation = "1.2s dark_mode_valuebox_change forwards";
     document.getElementById("value_text").style.animation = "1.2s dark_mode_valuetext_change forwards";
     document.getElementById("stop_button").style.background = "repeating-linear-gradient(-55deg, #f21d1f, #f21d1f 7px, #1c0000 7px, #1c0000 13px)";
+    document.getElementById("revamped_language_button").style.animation = "1.2s dark_mode_languagebutton_change forwards";
+    document.getElementById("selected_language_button").style.animation = "1.2s dark_mode_selectedlanguagebutton_change forwards";
+
     
     setTimeout(() => {
         document.getElementById("value_box").style.animation = "";
@@ -127,10 +118,40 @@ function darkMode() {
 
         document.getElementById("value_text").style.animation = "";
         document.getElementById("value_text").style.color = "black";
+
+        document.getElementById("selected_language_button").style.backgroundColor = "#2e2e2e";
     }, 1201);
 
     const elements = document.querySelectorAll(".ui-button");
     for (const element of elements) {
         element.style.animation = "1.2s dark_mode_button_change forwards";
     }
+}
+
+function changeToCzech() {
+    document.getElementById("selected_language_button").style.animation = "0.3s language_indicator_change_toCzech forwards";
+    document.getElementById("page_title").innerHTML = "Házení kostek";
+    document.getElementById("1die").innerHTML = "1 kostka";
+    document.getElementById("2die").innerHTML = "2 kostky";
+    document.getElementById("3die").innerHTML = "3 kostky";
+    document.getElementById("infinite1").innerHTML = "Nekonecné házení 1 kostky";
+    document.getElementById("infinite2").innerHTML = "Nekonecné házení 2 kostek";
+    document.getElementById("infinite3").innerHTML = "Nekonecné házení 3 kostek";
+    document.getElementById("sum_text").innerHTML = "Součet: ";
+    document.getElementById("dark_mode_button").innerHTML = "Tmavý režim";
+    document.getElementById("sum_number").style.marginLeft = "7rem";
+}
+
+function changeToEnglish() {
+    document.getElementById("selected_language_button").style.animation = "0.3s language_indicator_change_toEnglish forwards";
+    document.getElementById("page_title").innerHTML = "Dice-Roll";
+    document.getElementById("1die").innerHTML = "1 die";
+    document.getElementById("2die").innerHTML = "2 dice";
+    document.getElementById("3die").innerHTML = "3 dice";
+    document.getElementById("infinite1").innerHTML = "Infinitely roll 1";
+    document.getElementById("infinite2").innerHTML = "Infinitely roll 2";
+    document.getElementById("infinite3").innerHTML = "Infinitely roll 3";
+    document.getElementById("sum_text").innerHTML = "Sum: ";
+    document.getElementById("dark_mode_button").innerHTML = "Dark Mode";
+    document.getElementById("sum_number").style.marginLeft = "4.2rem";
 }
