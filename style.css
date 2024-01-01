@@ -36,6 +36,21 @@ button:active {
     to {background-image: url(images/Blueprint_black.svg); color: white; background-color: black;}
 }
 
+@keyframes dark_mode_button_change {
+    from {background-color: white; color: black;}
+    to {background-color: #141414; color: white;}
+}
+
+@keyframes dark_mode_valuebox_change {
+    from {background-color: black;}
+    to {background-color: white;}
+}
+
+@keyframes dark_mode_valuetext_change {
+    from {color: white;}
+    to {color: black;}
+}
+
 h1 {
     font-family: "Roboto Mono", Sans-serif;
 }
@@ -81,7 +96,9 @@ h1 {
 }
 
 #stop_button {
-    background: repeating-linear-gradient(-55deg, #f21d1f, #f21d1f 8px, #ffffff 8px, #ffffff 13px);
+    background: repeating-linear-gradient(-55deg, var(--stopbutton-color-one), var(--stopbutton-color-one) 8px, var(--stopbutton-color-two) 8px, var(--stopbutton-color-two) 13px);
+    --stopbutton-color-one: #f21d1f;
+    --stopbutton-color-two: #ffffff;
     color: white;
     padding: 0.2rem;
     width: 2.3rem;

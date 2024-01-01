@@ -2,6 +2,8 @@ window.onload = function () {
     document.getElementById("value_text").innerHTML = Cookies.get("rolled_number");
     document.getElementById("sum_number").innerHTML = Cookies.get("sum_amount");
 
+    console.log("Dark mode = " + Cookies.get("dark_mode"));
+
     if (Cookies.get("sum_amount") === undefined) {
         document.getElementById("sum_number").innerHTML = "----"
         document.getElementById("value_text").innerHTML = "----"
@@ -95,13 +97,9 @@ function toggleCzech() { // Aktuálně rozpracováno
 
 function animateNumberChange() {
     document.getElementById("value_text").style.animation = "0.5s number_change forwards";
+
     setTimeout(() => {
         document.getElementById("value_text").style.animation = "";
-    }, 520);
-
-    document.getElementById("sum_number").style.animation = "0.5s sum_number_change forwards";
-    setTimeout(() => {
-        document.getElementById("sum_number").style.animation = "";
     }, 520);
 }
 
@@ -119,12 +117,20 @@ function darkMode() {
     document.body.style.backgroundColor = "black";
     document.body.style.color = "white";
 
-    document.getElementById("value_box").style.backgroundColor = "white";
-    document.getElementById("value_text").style.color = "black";
+    document.getElementById("value_box").style.animation = "1.2s dark_mode_valuebox_change forwards";
+    document.getElementById("value_text").style.animation = "1.2s dark_mode_valuetext_change forwards";
+    document.getElementById("stop_button").style.background = "repeating-linear-gradient(-55deg, #f21d1f, #f21d1f 7px, #1c0000 7px, #1c0000 13px)";
+    
+    setTimeout(() => {
+        document.getElementById("value_box").style.animation = "";
+        document.getElementById("value_box").style.backgroundColor = "white";
+
+        document.getElementById("value_text").style.animation = "";
+        document.getElementById("value_text").style.color = "black";
+    }, 1201);
 
     const elements = document.querySelectorAll(".ui-button");
     for (const element of elements) {
-        element.style.backgroundColor = "#141414";
-        element.style.color = "white";
+        element.style.animation = "1.2s dark_mode_button_change forwards";
     }
 }
