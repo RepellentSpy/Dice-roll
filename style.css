@@ -4,7 +4,7 @@
 body {
     padding: 0.2rem;
     padding-left: 1.2rem;
-    overflow: hidden;
+    overflow-x: hidden;
     text-wrap: nowrap;
 }
 
