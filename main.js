@@ -2,8 +2,6 @@ window.onload = function () {
     document.getElementById("value_text").innerHTML = Cookies.get("rolled_number");
     document.getElementById("sum_number").innerHTML = Cookies.get("sum_amount");
 
-    console.log("Dark mode = " + Cookies.get("dark_mode"));
-
     if (Cookies.get("sum_amount") === undefined) {
         document.getElementById("sum_number").innerHTML = "----"
         document.getElementById("value_text").innerHTML = "----"
