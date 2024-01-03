@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +9,9 @@
   <script type="text/javascript" src="main.js"></script>
   <!-- js-cookie -->
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+  <link rel="icon" href="images/favicon.svg" type="image/x-icon">
 </head>
+
 <body style="background-image: url(images/Blueprint_white.svg)">
   <h1 id="page_title">Dice-Roll</h1>
   <div id="value_box">
@@ -25,14 +28,15 @@
     <button id="2die" onclick="hodDvemaKostkami()" class="ui-button">2 dice</button>
     <button id="3die" onclick="hodTremiKostkami()" class="ui-button">3 dice</button>
   </section>
-  
+
   <section id="nekonecne_hazeni_buttons">
     <button id="infinite1" onclick="nekonecne_hazeni(); showStopButton();" class="ui-button">Infinitely roll 1</button>
     <button id="infinite2" onclick="nekonecne_hazeni2(); showStopButton();" class="ui-button">Infinitely roll 2</button>
     <button id="infinite3" onclick="nekonecne_hazeni3(); showStopButton();" class="ui-button">Infinitely roll 3</button>
   </section>
-  
-  <button id="dark_mode_button" class="ui-button" onclick="darkMode()"><img src="images/moon.svg" id="dark_mode_icon"></button>
+
+  <button id="dark_mode_button" class="ui-button" onclick="darkMode()"><img src="images/moon.svg"
+      id="dark_mode_icon"></button>
 
   <div id="revamped_language_button">
     <img src="images/gb_flag.png" id="gb_flag" onclick="changeToEnglish();">
@@ -40,7 +44,9 @@
     <div id="selected_language_button"></div>
   </div>
 
-  <p id="back_button"><img src="images/experiment_tube.svg" id="labs_icon"><a href="https://hz-labs.web.app/" id="back_text">Back to Labs</a></p>
+  <p id="back_button"><img src="images/experiment_tube.svg" id="labs_icon"><a href="https://hz-labs.web.app/"
+      id="back_text">Back to Labs</a></p>
 
 </body>
+
 </html>
