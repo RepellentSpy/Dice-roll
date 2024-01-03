@@ -142,7 +142,6 @@ function changeToCzech() {
     document.getElementById("infinite2").innerHTML = "Nekonecné házení 2 kostek";
     document.getElementById("infinite3").innerHTML = "Nekonecné házení 3 kostek";
     document.getElementById("sum_text").innerHTML = "Součet: ";
-    document.getElementById("dark_mode_button").innerHTML = "Tmavý režim";
     document.getElementById("sum_number").style.marginLeft = "7rem";
 }
 
@@ -156,6 +155,5 @@ function changeToEnglish() {
     document.getElementById("infinite2").innerHTML = "Infinitely roll 2";
     document.getElementById("infinite3").innerHTML = "Infinitely roll 3";
     document.getElementById("sum_text").innerHTML = "Sum: ";
-    document.getElementById("dark_mode_button").innerHTML = "Dark Mode";
     document.getElementById("sum_number").style.marginLeft = "4.2rem";
 }
